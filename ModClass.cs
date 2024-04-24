@@ -20,7 +20,6 @@ namespace SoulSovereign
         }
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
         {
-            Instance = this;
             ResourceLoader.InitResources(preloadedObjects);
             UnityEngine.SceneManagement.SceneManager.activeSceneChanged += CheckScene;
             ModHooks.LanguageGetHook += ChangeText;
