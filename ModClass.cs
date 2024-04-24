@@ -4,9 +4,8 @@ namespace SoulSovereign
 {
     public class SoulSovereign : Mod
     {
-        internal static SoulSovereign Instance;
-
-        public override string GetVersion() => "v0.0.0.6";
+        public SoulSovereign() : base("Soul Sovereign") { }
+        public override string GetVersion() => "v1.0.0.0";
         public override List<(string, string)> GetPreloadNames()
         {
             return new List<(string, string)>
